@@ -1,0 +1,42 @@
+.business {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.our-business-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+.our-business-link-list {
+  display: flex;
+}
+
+.our-business-link-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.our-business-link-list-item {
+  position: relative;
+}
+
+.our-business-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.our-business-overlay-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
