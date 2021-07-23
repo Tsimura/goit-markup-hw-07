@@ -11,8 +11,6 @@
   letter-spacing: 0.03em;
 
   margin-bottom: 12px;
-
-  /* color: var(--primary-text-color); */
 }
 
 .modal-form-field {
@@ -37,18 +35,16 @@
   padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
-  /* box-sizing: border-box; */
+
   border-radius: 4px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-}
 
-.modal-form-input:focus,
-.modlal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
-  /* box-sizing: border-box; */
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-icon {
@@ -61,44 +57,18 @@
 
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
-}
-
-.modlal-form-message::placeholder {
+.modal-form-message::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
   color: var(--placeholder-text-color);
-}
-
-.modal-form-checkbox-label::before {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 15px;
-  border: 1px solid #212121;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-right: 7px;
-
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background: #2196f3;
-  background-image: url(../images/icon-check-modal.svg);
-  background-size: contain;
-}
-
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  outline: 2px solid var(--accent-color);
-  /* border-color: transparent; */
-  /* border: 2px solid var(--accent-color);
-  border-radius: 2px; */
 }
 
 .modal-form-checkbox-label {
@@ -114,7 +84,29 @@
   color: #757575;
 }
 
+.modal-form-checkbox-label::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 7px;
+
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form-checkbox:checked + & {
+    background: #2196f3;
+    background-image: url(../images/icon-check-modal.svg);
+    background-size: contain;
+  }
+
+  .modal-form-checkbox:focus + & {
+    outline: 2px solid var(--accent-color);
+  }
+}
+
 .modal-form-label-link {
   color: var(--accent-color);
-  /* text-decoration: underline; */
 }

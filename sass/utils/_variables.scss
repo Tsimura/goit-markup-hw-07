@@ -10,3 +10,9 @@
   --color-bg-backdrop: rgba(0, 0, 0, 0.2);
   --main-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background: var(--primary-white-color);
+}
