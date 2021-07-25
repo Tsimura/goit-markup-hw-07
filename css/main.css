@@ -525,12 +525,12 @@ img {
   color: #757575;
 }
 
-.business {
+.our-business {
   padding-top: 47px;
   padding-bottom: 94px;
 }
 
-.our-business-title {
+.our-business__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -539,19 +539,19 @@ img {
   margin-bottom: 50px;
 }
 
-.our-business-link-list {
+.our-business__list {
   display: flex;
 }
 
-.our-business-link-list-item:not(:last-child) {
+.our-business__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-business-link-list-item {
+.our-business__item {
   position: relative;
 }
 
-.our-business-overlay {
+.our-business__item-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -559,7 +559,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.our-business-overlay-text {
+.our-business__item-overlay-text {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
