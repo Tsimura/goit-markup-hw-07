@@ -3,18 +3,18 @@
   padding-bottom: 47px;
 }
 
-.features-links-list {
+.features__list {
   display: flex;
 }
-.features-links-list-item {
+.features__item {
   max-width: 270px;
 }
 
-.features-links-list-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature-icon-center {
+.feature__icon-center {
   width: 270px;
   height: 120px;
 
@@ -28,7 +28,7 @@
   margin-bottom: 30px;
 }
 
-.features-links-list-item-title {
+.features__item-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.42;
@@ -36,7 +36,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.features-links-list-item-description {
+.features__item-description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
