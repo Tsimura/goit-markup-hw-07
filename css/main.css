@@ -144,6 +144,32 @@ img {
   height: 20px;
 }
 
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.footer-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-bg-footer-icon);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-list-link:hover, .footer-list-link:focus {
+  background-color: var(--accent-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -299,20 +325,6 @@ img {
   color: var(--accent-color);
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.container__header {
-  display: flex;
-  align-items: center;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -329,8 +341,36 @@ img {
   padding-bottom: 25px;
 }
 
-.logo__webstudio {
+.footer__logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.footer__logo-title {
+  margin-bottom: 20px;
+}
+
+.logo__webstudio--color-blue {
   color: var(--accent-color);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.container__header {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -787,20 +827,6 @@ img {
   align-items: baseline;
 }
 
-.logo-footer-title {
-  margin-bottom: 20px;
-}
-
-.logo-footer {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
-}
-
 .footer-address-point {
   display: block;
   font-style: normal;
@@ -858,32 +884,6 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-}
-
-.footer-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-list-icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--primary-white-color);
-}
-
-.footer-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--color-bg-footer-icon);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-list-link:hover, .footer-list-link:focus {
-  background-color: var(--accent-color);
 }
 
 .subscription {
